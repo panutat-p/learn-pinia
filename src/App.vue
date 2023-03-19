@@ -1,31 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue';
-
 import TheHeader from './components/TheHeader.vue';
 import ProductCard from './components/ProductCard.vue';
+import { useProductStore } from './stores/product';
 
-const products = ref([
-  {
-    name: "Plain Ol' Pineapple",
-    image: 'pineapple-original.jpg',
-    price: 4,
-  },
-  {
-    name: 'Dried Pineapple',
-    image: 'pineapple-dried.jpg',
-    price: 5,
-  },
-  {
-    name: 'Pineapple Gum',
-    image: 'pineapple-gum.jpg',
-    price: 3,
-  },
-  {
-    name: 'Pineapple T-Shirt',
-    image: 'pineapple-tshirt.jpg',
-    price: 12,
-  },
-]);
+const { products } = useProductStore();
 </script>
 
 <template>
