@@ -13,5 +13,5 @@ npx tailwindcss init -p
 ```
 
 ## Guides
-https://tailwindcss.com/docs/font-size
 
+https://tailwindcss.com/docs/font-size
