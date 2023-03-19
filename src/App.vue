@@ -2,8 +2,9 @@
 import TheHeader from './components/TheHeader.vue';
 import ProductCard from './components/ProductCard.vue';
 import { useProductStore } from './stores/product';
+import { storeToRefs } from 'pinia';
 
-const { products } = useProductStore();
+const { products } = storeToRefs(useProductStore());
 </script>
 
 <template>
