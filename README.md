@@ -1,10 +1,8 @@
 ## Dependencies
 
-https://formkit.com/getting-started/installation#with-astro
+https://pinia.vuejs.org/getting-started.html
 
-https://formkit.com/getting-started/installation#with-astro#adding-genesis-theme
-
-https://getbootstrap.com/docs/5.3/getting-started/download/#package-managers
+https://tailwindcss.com/docs/guides/vite
 
 ```shell
 npm i -D prettier
@@ -13,5 +11,7 @@ npx tailwindcss init -p
 ```
 
 ## Guides
+
+https://pinia.vuejs.org/core-concepts/state.html#typescript
 
 https://tailwindcss.com/docs/font-size
