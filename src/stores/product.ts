@@ -1,4 +1,5 @@
 import { defineStore } from 'pinia';
+
 import { Product } from '../types/product.type';
 
 export const useProductStore = defineStore('product-store', {
@@ -33,5 +34,9 @@ export const useProductStore = defineStore('product-store', {
       ];
     },
   },
-  // getters
+  getters: {
+    cheapPineapple(state): Product[] {
+      return state.products.filter((e) => e.price < 10);
+    },
+  },
 });

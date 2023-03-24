@@ -6,6 +6,7 @@ import { useProductStore } from './stores/product';
 const productStore = useProductStore();
 
 productStore.fill();
+console.log(productStore.cheapPineapple);
 </script>
 
 <template>
